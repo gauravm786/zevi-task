@@ -1,0 +1,399 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+.page{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+.sidebar{
+    width: 20%;
+    height: 100vh;
+    /* background-color: red; */
+}
+.sidebar h2{
+    margin-top: 6rem;
+    text-align: center;
+}
+.mainbar{
+    width: 80%;
+    height: 100vh;
+    /* background-color: yellow; */
+}
+.mainbarBox{
+    /* border: 1px solid black; */
+    position: absolute;
+    width: 79%;
+    height: 74vh;
+    margin: auto;
+    top:23%;
+    display: grid;
+    grid-template-rows: 55vh 55vh;
+    grid-template-columns: repeat(4,1fr);
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 1.5rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+    /* border: 1px solid black; */
+}
+
+.mainbarCardImg{
+    height: 42vh;
+    width: 100%;
+    position: relative;
+    /* border: 1px solid black; */
+}
+.mainbarCardImg img{
+    height: 100%;
+    width: 100%;
+    border-radius: 0px;
+}
+
+.view{
+    /* display: none;
+    position: relative;
+    color: white;
+    font-size: 1.5rem;
+    background-color: blueviolet;
+    text-align: center;
+    top: -21%; */
+}
+
+.mainbarCardImg p{
+    display: none;
+}
+.mainbarCardImg:hover p{
+    display: block;
+    position: absolute;
+    color: white;
+    font-size: 1.5rem;
+    padding-top: 5px;
+    padding-bottom: 8px;
+    background-color: rgb(99, 99, 223);
+    /* background-color: blueviolet; */
+    opacity: 0.8;
+    text-align: center;
+    width: 100%;
+    bottom: -1.5rem; 
+}
+
+h3,h4{
+    margin-top: 0.7rem;
+    line-height: 5px;
+    font-weight: 500;
+}
+h6{
+    position: relative;
+    color: white;
+    top: -18.5rem;
+    left: 86%;
+}
+
+
+span:first-child{
+    color: gray;
+    text-decoration: line-through;
+    font-weight: 100;
+}
+span:last-child{
+    color: blue;
+    font-weight: 600;
+}
+
+.searchInputs {
+    position: absolute;
+    top: 5%;
+    display: flex;
+    width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 1rem;
+}
+  
+input{
+    background-color: white;
+    font-size: 1rem;
+    color: gray;
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 0.5rem;
+    border: 1px solid gray;
+}
+input:focus{
+  outline: none;
+}
+  
+  .searchIcon {
+    color: gray;
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    right: 0.5%;
+    border: none;
+    outline: none;
+    display: grid;
+    place-items: center;
+  }
+
+.data{
+    display: flex;
+}  
+
+.accordion{
+    position: relative;
+    width: 80%;
+    left: -10%;
+    top: -4%;
+    height: 70vh;
+    margin: 50px;
+    /* border: 1px solid black; */
+}
+
+.accordionBox{
+    position: relative;
+    width: 100%;
+    height: 7rem;
+    margin-top: 0.7rem;
+    border-bottom: 1px solid gray;
+}
+.accordionTab,.ratingTab{
+    display: flex;
+}
+.h3{
+    margin-top: -1rem;
+}
+.accordionTab p{
+    position: absolute;
+    top: -12%;
+    left: 85%;
+}
+/* .accordionTab p::after{
+    position: absolute;
+    top: -10%;
+    left: 85%;
+    transform: rotate(180deg);
+    transition: transform 0.3s;
+} */
+.ratingTab p{
+    position: absolute;
+    top: -7%;
+    left: 85%;
+}
+.ratingBox{
+    /* border: 1px solid black; */
+    position: relative;
+    width: 100%;
+    height: 37.5vh;
+    margin-top: 0.7rem;
+}
+
+
+/* media query  */
+
+
+/* extra small device  */
+@media screen and (min-width:0px) and (max-width:600px){
+    .page{
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-rows: 40% 50% ;
+        grid-template-columns:100%;
+        align-content: center;
+    }
+    .sidebar{
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        /* background-color: red; */
+    }
+    .sidebar h2{
+        margin-top: 3rem;
+    }
+    .accordion{
+        position: relative;
+        width: 94%;
+        /* left: -10%; */
+        top: -2%;
+        height: 30rem;
+        /* margin: 50px; */
+        margin: 10 auto;
+        /* border: 1px solid black; */
+    }
+    .mainbar{
+        width: 100%;
+        height: 100vh;
+        margin-top: 2rem;
+        /* background-color: yellow; */
+    }
+    .mainbarBox{
+        /* border: 1px solid black; */
+        position: relative;
+        width: 94%;
+        height: 100vh;
+        margin: auto;
+        top: 0%;
+        display: grid;
+        grid-template-rows: repeat(8,1fr);
+        grid-template-columns: 100%;
+        grid-column-gap: 0rem;
+        grid-row-gap: 0rem;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    h6{
+        position: relative;
+        color: white;
+        top: -102%;
+        left: 88%;
+    }
+    .ratingTab p{
+        position: absolute;
+        top: -5%;
+        left: 85%;
+    }
+}
+/* small device  */
+@media screen and (min-width:600px) and (max-width:900px){
+    .page{
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-rows: 100% ;
+        grid-template-columns:50% 50%;
+        align-content: center;
+    }
+    .sidebar{
+        width: 100%;
+        height: 65vh;
+        margin: auto;
+        /* background-color: red; */
+    }
+    .sidebar h2{
+        margin-top: 3rem;
+    }
+    .accordion{
+        position: relative;
+        width: 92%;
+        margin: auto;
+        /* left: -10%; */
+        top: -2%;
+        height: 70%;
+        margin: 50px;
+        /* border: 1px solid black; */
+    }
+    .mainbar{
+        width: 100%;
+        height: 100vh;
+        /* background-color: yellow; */
+    }
+    .mainbarBox{
+        /* border: 1px solid black; */
+        position: relative;
+        width: 92%;
+        height: 100vh;
+        margin: auto;
+        top: 17.4%;
+        display: grid;
+        grid-template-rows: repeat(8,1fr);
+        grid-template-columns: 100%;
+        /* grid-column-gap: 1.5rem;
+        grid-row-gap: 1.5rem; */
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    h6{
+        position: relative;
+        color: white;
+        top: -102%;
+        left: 88%;
+    }
+    .ratingTab p{
+        position: absolute;
+        top: -3.5%;
+        left: 85%;
+    }
+}
+/* medium  */
+@media screen and (min-width:900px) and (max-width:1200px){
+    .page{
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-rows: 100% ;
+        grid-template-columns:30% 70%;
+        align-content: center;
+    }
+    .sidebar{
+        width: 100%;
+        height: 65vh;
+        margin: auto;
+        /* background-color: red; */
+    }
+    .sidebar h2{
+        margin-top: 3rem;
+    }
+    .accordion{
+        position: relative;
+        width: 92%;
+        margin: auto;
+        /* left: -10%; */
+        top: -2%;
+        height: 61%;
+        margin: 50px;
+        /* border: 1px solid black; */
+    }
+    .mainbar{
+        width: 96%;
+        height: 100vh;
+        margin: auto;
+        /* background-color: yellow; */
+    }
+    .mainbarBox{
+        /* border: 1px solid black; */
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        margin: auto;
+        top: 17.4%;
+        display: grid;
+        grid-template-rows: repeat(5,28%);
+        grid-template-columns: 1fr 1fr;
+        /* grid-column-gap: 1.5rem; */
+        /* grid-row-gap: 0rem; */
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    h6{
+        position: relative;
+        color: white;
+        top: -102%;
+        left: 80%;
+    }
+    .mainbarCardImg{
+        height: 22vh;
+        width: 100%;
+        position: relative;
+        /* border: 1px solid black; */
+    }
+    .mainbarCardImg img{
+        height: 100%;
+        width: 100%;
+        border-radius: 0px;
+    }
+    .ratingTab{
+        /* border: 1px solid black; */
+        /* height: 2rem; */
+    }
+    .ratingTab p{
+        /* border: 1px solid black; */
+        position: absolute;
+        top: -3%;
+        left: 85%;
+        height: 1rem;
+    }
+}
+

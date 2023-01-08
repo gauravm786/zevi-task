@@ -1,0 +1,177 @@
+.clothes{
+    background-image: url("./images/clothes.webp");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;
+}
+
+.searchInputs {
+    position: absolute;
+    top: 9%;
+    display: flex;
+    width: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 1rem;
+  }
+  
+input{
+    background-color: white;
+    border: 0px solid;
+    font-size: 1rem;
+    color: gray;
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 0.5rem;
+}
+input:focus{
+  outline: none;
+}
+  
+  .searchIcon {
+    color: gray;
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    right: 0.5%;
+    border: none;
+    outline: none;
+    display: grid;
+    place-items: center;
+  }
+
+.h3-1{
+  position: relative;
+  left: 2%;
+  margin-top:2rem;
+  color: black;
+}  
+
+.h3-2{
+  position: relative;
+  left: 2%;
+  margin-top:2.5rem;
+  color: black;
+}
+
+h5{
+position: relative;
+line-height:0.3rem;
+margin-left: 2%;
+font-weight: 500;
+}
+
+.h5-1{
+  margin-top: 2rem
+}
+
+.shoppingBox{
+position: absolute;
+top: 12%;
+height: 82vh;
+width: 76%;
+left: 50%;
+transform: translateX(-50%);
+background-color: white;
+}
+
+.shoppingBoxContent{
+  /* border: 1px solid black; */
+  position: relative;
+  top: 2%;
+  width: 96%;
+  height: 34vh;
+  margin: auto;
+  display: grid;
+  grid-template-rows: 35vh;
+  grid-template-columns: repeat(5,1fr);
+  grid-column-gap: 1.5rem;
+}
+
+
+img{
+  height: 30vh;
+  width: 100%;
+  /* border: 1px solid black; */
+  border-radius: 0.3rem;
+}
+
+.imagesData{
+  text-align: center;
+}
+
+
+/* media query */
+
+
+/* extra small device */
+@media only screen and (min-width:0px) and (max-width:600px){
+  
+  /* trends */
+  .shoppingBoxContent{
+    /* border: 1px solid black; */
+    width: 96%;
+    height: 34vh;
+    margin: auto;
+    display: grid;
+    grid-template-rows:35%;
+    grid-template-columns: repeat(5,75%);
+    grid-column-gap: 1.5rem;
+    overflow-x: auto;
+  }
+
+}
+
+/* small device */
+@media only screen and (min-width:600px) and (max-width:900px){
+  
+  /* trends */
+  .shoppingBoxContent{
+    /* border: 1px solid black; */
+    width: 96%;
+    height: 34vh;
+    margin: auto;
+    display: grid;
+    grid-template-rows:35%;
+    grid-template-columns: repeat(5,75%);
+    grid-column-gap: 1.5rem;
+    overflow-x: auto;
+  }
+
+}
+
+/* medium  */
+@media only screen and (min-width:900px) and (max-width:1200px){
+  
+  /* trends */
+  .shoppingBoxContent{
+    /* border: 1px solid black; */
+    width: 96%;
+    height: 34vh;
+    margin: auto;
+    display: grid;
+    grid-template-rows:35%;
+    grid-template-columns: repeat(5,75%);
+    grid-column-gap: 1.5rem;
+    overflow-x: auto;
+  }
+
+}
+@media only screen and (min-width:900px) and (max-width:1200px){
+  
+  /* trends */
+  .shoppingBoxContent{
+    /* border: 1px solid black; */
+    width: 96%;
+    height: 34vh;
+    margin: auto;
+    display: grid;
+    grid-template-rows:35%;
+    grid-template-columns: repeat(5,75%);
+    grid-column-gap: 1.5rem;
+    overflow-x: auto;
+  }
+
+}
